@@ -38,13 +38,13 @@ Set your OpenAI API key in .env file as in .env.example
 ### Single language
 
 ```bash
-python main.py --video_path input/sample_en.mp4 --language vietnamese
+python main.py --video_path input/sample_en.mp4 --language "vietnamese"
 ```
 
 ### Multiple languages
 
 ```bash
-python main.py --video_path input/sample_en.mp4 --language vietnamese,japanese,french
+python main.py --video_path input/sample_en.mp4 --language "vietnamese,spanish"
 ```
 ---
 
