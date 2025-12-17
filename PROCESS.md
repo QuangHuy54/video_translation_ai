@@ -48,10 +48,24 @@ The objective of this case study was to build a **working prototype** that trans
 
 ---
 
-## 4. Further improvements (Not Finished)
+## 4. Results
+
+### Quality Assessment
+- Translation quality: Natural and understandable
+- Subtitle synchronization: Acceptable for short clips
+### Limitations
+- Ambiguous sentences without visual context may be translated incorrectly  
+
+---
+
+## 5. Further improvements (Not Finished)
 
 **Problem:** Subtitle translation can be inaccurate when context is ambiguous. For example, the English sentence “I love you” can be translated into Vietnamese as “Anh yêu em” or “Em yêu anh”, and this distinction cannot be determined without additional contextual information such as speaker identity or visual cues.
 
 **Steps Attempted:** I attempted to extract video frames based on subtitle timestamps and pass these images to ChatGPT to provide additional visual context for translation. However, due to temporary errors from the OpenAI API at the time of testing, this approach could not be fully evaluated. Relevant commented code can be found in utils/translate.py. 
+
+## 6. Time breakdown 
+
+I spent approximately 15 minutes on research, followed by 2 hours and 15 minutes of implementation, and the final 30 minutes on writing documentation.
 
 ---
