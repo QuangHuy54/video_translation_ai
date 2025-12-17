@@ -9,7 +9,7 @@ import math
 import base64
 load_dotenv()
 
-MODEL = "gpt-3.5-turbo"
+MODEL = "gpt-5-mini"
 VERBOSE = False
 BATCHSIZE = 50
 
