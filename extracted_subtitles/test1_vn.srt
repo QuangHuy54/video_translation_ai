@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:09,160
+Hôm nay lạnh quá. Ừ, hơi se lạnh.
+
+2
+00:00:09,160 --> 00:00:12,920
+Hai mươi lăm độ. Ở Anh thì sẽ là bao nhiêu?
+
+3
+00:00:12,920 --> 00:00:17,799
+Ồ, âm mấy độ. Nhưng làm sao bạn biết tôi là người Anh?
+
+4
+00:00:17,799 --> 00:00:21,000
+À, tôi nhận ra qua giọng nói của bạn. Ồ.
+

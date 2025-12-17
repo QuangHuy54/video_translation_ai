@@ -24,12 +24,13 @@ if __name__ == "__main__":
     audio_path=f"{filename}.mp3"
     segments = transcribe_audio_openai(audio_path)
     subs = list(srt.parse(segments))
-    for lang in languages: 
+    for lang in languages:
+        lang=lang.strip() 
         clone_subs=subs.copy()
         translate(clone_subs,target_language=lang)
         output = srt.compose(clone_subs)
-        with open(get_translated_filename(video_path,lang),"w") as handle:
+        with open(get_translated_filename(video_path,lang),"w", encoding="utf-8") as handle:
             handle.write(output)
-        extract_video_subtitles(video_path,get_translated_filename(video_path,lang))
+        extract_video_subtitles(video_path,get_translated_filename(video_path,lang),lang)
     
         

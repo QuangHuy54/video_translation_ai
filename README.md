@@ -25,8 +25,6 @@ pip install openai moviepy pysrt srt argparse python-dotenv
 
 ffmpeg is required.
 
-Please create the following directories before running the project: extracted_audio, extracted_frames, extracted_subtitles, output 
-
 ---
 
 ## 🔑 OpenAI API Setup

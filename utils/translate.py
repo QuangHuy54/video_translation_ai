@@ -3,14 +3,14 @@ from dotenv import load_dotenv
 import srt
 from moviepy import VideoFileClip
 from openai import OpenAI
-from prompt import SYSTEM_PROMPT
+from utils.prompt import SYSTEM_PROMPT
 import os
 import math
 import base64
 load_dotenv()
 
 MODEL = "gpt-5-mini"
-VERBOSE = False
+VERBOSE = True
 BATCHSIZE = 50
 
 client = OpenAI()
@@ -44,7 +44,7 @@ def translate_batch(batch, target_language):
             completion = client.chat.completions.create(model=MODEL,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT + f"Translate the text below line by line into {target_language}. "},
-                {"role": "user", "content": batch}
+                {"role": "user", "content": [{"type":"text","text": str(batch)}]}
             ])
             tbatch = json.loads(completion.choices[0].message.content)
         except Exception as e:
@@ -58,7 +58,6 @@ def translate_batch(batch, target_language):
 def translate(subs,target_language,video_path=None):
     total_batch = (len(subs) + BATCHSIZE - 1) // BATCHSIZE
     for i in range(0, len(subs), BATCHSIZE):
-        print(f"batch {i//BATCHSIZE + 1} / {total_batch}")
         chunk = subs[i:i+BATCHSIZE]
         batch = makebatch(chunk)
         # images_paths=extract_frames_from_batch(chunk,video_path,i)

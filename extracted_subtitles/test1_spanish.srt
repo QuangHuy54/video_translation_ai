@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:09,160
+Hoy hace mucho frío. Sí, un poco fresco.
+
+2
+00:00:09,160 --> 00:00:12,920
+Veinticinco grados. ¿Cuánto sería eso en Inglaterra?
+
+3
+00:00:12,920 --> 00:00:17,799
+Oh, unos grados bajo cero. Pero ¿cómo supiste que soy inglés?
+
+4
+00:00:17,799 --> 00:00:21,000
+Ah, me di cuenta por tu voz. Oh.
+
